@@ -31,7 +31,7 @@ This plugin automates **model cleanup in Autodesk Revit 2025** by scanning for u
    ```bash
    git clone https://github.com/yourusername/revit-cleanup-tool.git
    ```
-2. Open the solution in **Visual Studio 2022**.  
+2. Open the solution in **Visual Studio**.  
 3. Build the project and copy the generated `.addin` manifest + DLL into your Revit 2025 `AddIns` folder.  
 4. Launch Revit 2025 and find the tool under the **Add‑Ins tab**.   
 
