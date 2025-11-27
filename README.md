@@ -30,6 +30,7 @@ This plugin automates **model cleanup in Autodesk Revit 2025** by scanning for u
 
 ## Project Structure
 ```
+README.md                  # Root documentation
 /src
   AuditCleanupCommand.cs   # Entry point: runs the audit, aggregates results, writes log
   FlaggedItem.cs           # Data structure for flagged elements (ID, Name, Category, Reason)
@@ -37,8 +38,8 @@ This plugin automates **model cleanup in Autodesk Revit 2025** by scanning for u
   ViewScanner.cs           # Logic to identify unused views
   LinkScanner.cs           # Logic to identify unused Revit links
 /docs
-  README.md                # Documentation
   CHANGELOG.md             # Version history
+  sample_cleanup_log.csv   # Example output log file
 ```
 
 ---

@@ -1,0 +1,6 @@
+ID,Name,Category,Reason
+12345,"Level 01 - Working Plan","View (FloorPlan)","Not placed on any sheet"
+23456,"Mechanical Coordination","View (3D)","Not placed on any sheet"
+34567,"Unloaded_Link_A.rvt","Revit Link","Unloaded"
+45678,"Callout - Stair Detail","View (Detail)","Not placed on any sheet"
+56789,"Electrical Coordination","View (Section)","Not placed on any sheet"

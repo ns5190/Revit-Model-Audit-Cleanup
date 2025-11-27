@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>Model Audit & Cleanup</Name>
+    <Assembly>$(AppData)\Autodesk\Revit\Addins\2025\RevitCleanup2025.dll</Assembly>
+    <FullClassName>RevitCleanup2025.AuditCleanupCommand</FullClassName>
+    <Text>Model Audit & Cleanup</Text>
+    <Description>Scan for unused views and Revit links, and export a log.</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <VendorId>YOURID</VendorId>
+    <VendorDescription>Your org</VendorDescription>
+  </AddIn>
+</RevitAddIns>
