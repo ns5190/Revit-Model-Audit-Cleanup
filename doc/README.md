@@ -9,9 +9,9 @@ This plugin automates **model cleanup in Autodesk Revit 2025** by scanning for u
 - **Scan & Flag**
   - Detect unused linked Revit models  
   - Identify views not placed on sheets  
-  - Find unused callouts/sections  
+  - Find unused callouts/sections (TBD)
 - **Logging**
-  - Export flagged items to CSV/JSON  
+  - Export flagged items to CSV with headers (ID, Name, Category, Reason) 
   - Include element ID, name, category, and reason flagged  
 - **Safe Cleanup**
   - Review flagged items before deletion  
@@ -26,29 +26,19 @@ This plugin automates **model cleanup in Autodesk Revit 2025** by scanning for u
 - Visual Studio 2022+  
 - Revit 2025 API (included in the Autodesk Revit SDK)  
 
-### Installation [To be updated once tool is developed]
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/revit-cleanup-tool.git
-   ```
-2. Open the solution in **Visual Studio**.  
-3. Build the project and copy the generated `.addin` manifest + DLL into your Revit 2025 `AddIns` folder.  
-4. Launch Revit 2025 and find the tool under the **Add‑Ins tab**.   
-
 ---
 
 ## Project Structure
 ```
 /src
-  CleanupCommand.cs     # Core C# plugin logic
-  Logger.cs             # Utility for log creation
-  Helpers.cs            # Revit API helper functions
-  CleanupDialog.xaml    # WPF dialog for review
-/scripts
-  cleanup.py            # pyRevit prototype script
+  AuditCleanupCommand.cs   # Entry point: runs the audit, aggregates results, writes log
+  FlaggedItem.cs           # Data structure for flagged elements (ID, Name, Category, Reason)
+  Logger.cs                # Utility for writing flagged items to CSV log
+  ViewScanner.cs           # Logic to identify unused views
+  LinkScanner.cs           # Logic to identify unused Revit links
 /docs
-  README.md             # Documentation
-  CHANGELOG.md          # Version history
+  README.md                # Documentation
+  CHANGELOG.md             # Version history
 ```
 
 ---
