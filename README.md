@@ -37,11 +37,23 @@ README.md                  # Root documentation
   Logger.cs                # Utility for writing flagged items to CSV log
   ViewScanner.cs           # Logic to identify unused views
   LinkScanner.cs           # Logic to identify unused Revit links
+/tests
+  RevitCleanup2025.Tests.csproj # NUnit test project
+  ViewScannerTests.cs           # Unit tests for view scanning
+  LinkScannerTests.cs           # Unit tests for link scanning
+  LoggerTests.cs                # Unit tests for logging
 /docs
   CHANGELOG.md             # Version history
   sample_cleanup_log.csv   # Example output log file
-  SETUP.md
+  SETUP.md                 # Detailed installation & setup instructions
+  TestPlan.md              # Manual + automated QA test plan
 ```
+
+---
+
+## Testing
+- Manual QA: See TestPlan.md for instructions on creating a mock project and validating results inside Revit.
+- Automated Unit Tests: Run with dotnet test tests/RevitCleanup2025.Tests.csproj or via GitHub Actions (badge above).  
 
 ---
 
