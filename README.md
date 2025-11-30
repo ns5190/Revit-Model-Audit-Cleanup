@@ -9,7 +9,6 @@ This plugin automates **model cleanup in Autodesk Revit 2025** by scanning for u
 - **Scan & Flag**
   - Detect unused linked Revit models  
   - Identify views not placed on sheets  
-  - Find unused callouts/sections (TBD)
 - **Logging**
   - Export flagged items to CSV with headers (ID, Name, Category, Reason) 
   - Include element ID, name, category, and reason flagged  
@@ -20,6 +19,7 @@ This plugin automates **model cleanup in Autodesk Revit 2025** by scanning for u
 ---
 
 ## Getting Started
+See the full installation and setup guide in SETUP.md.
 ### Prerequisites
 - Autodesk Revit 2025  
 - .NET 6.0 SDK  
@@ -40,6 +40,7 @@ README.md                  # Root documentation
 /docs
   CHANGELOG.md             # Version history
   sample_cleanup_log.csv   # Example output log file
+  SETUP.md
 ```
 
 ---
